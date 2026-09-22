@@ -1,0 +1,1958 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>مدرسة فتح الله كيرة التجارية</title>
+
+<meta name="description" content="الموقع الإلكتروني لمدرسة فتح الله كيرة التجارية">
+
+<style>
+
+/* =====================================================
+   RESET
+===================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Tahoma, Arial, sans-serif;
+    background:#080808;
+    color:#fff;
+    line-height:1.7;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+button,
+input,
+textarea,
+select{
+    font-family:inherit;
+}
+
+/* =====================================================
+   VARIABLES
+===================================================== */
+
+:root{
+    --black:#080808;
+    --black2:#111111;
+    --black3:#171717;
+
+    --yellow:#f5c400;
+    --yellow2:#ffd83d;
+
+    --white:#ffffff;
+    --gray:#b8b8b8;
+    --border:rgba(255,255,255,.09);
+
+    --purple:#7b4dff;
+}
+
+/* =====================================================
+   GENERAL
+===================================================== */
+
+.container{
+    width:min(1150px,92%);
+    margin:auto;
+}
+
+section{
+    padding:90px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:55px;
+}
+
+.section-title .small{
+    color:var(--yellow);
+    font-size:14px;
+    font-weight:bold;
+    letter-spacing:1px;
+    margin-bottom:8px;
+}
+
+.section-title h2{
+    font-size:36px;
+    margin-bottom:12px;
+}
+
+.section-title p{
+    color:var(--gray);
+    max-width:650px;
+    margin:auto;
+}
+
+.btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    padding:13px 23px;
+    border-radius:10px;
+    border:none;
+    cursor:pointer;
+    font-weight:bold;
+    transition:.25s;
+}
+
+.btn-yellow{
+    background:var(--yellow);
+    color:#080808;
+}
+
+.btn-yellow:hover{
+    background:var(--yellow2);
+    transform:translateY(-2px);
+}
+
+.btn-outline{
+    border:1px solid rgba(245,196,0,.45);
+    color:var(--yellow);
+    background:transparent;
+}
+
+.btn-outline:hover{
+    background:rgba(245,196,0,.08);
+}
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+header{
+    position:fixed;
+    top:0;
+    right:0;
+    left:0;
+    z-index:1000;
+    background:rgba(8,8,8,.88);
+    backdrop-filter:blur(14px);
+    border-bottom:1px solid var(--border);
+}
+
+.navbar{
+    min-height:75px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo-icon{
+    width:43px;
+    height:43px;
+    border-radius:12px;
+    background:var(--yellow);
+    color:#080808;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:22px;
+    font-weight:900;
+}
+
+.logo-text strong{
+    display:block;
+    font-size:17px;
+}
+
+.logo-text span{
+    display:block;
+    color:var(--yellow);
+    font-size:11px;
+}
+
+.nav-links{
+    display:flex;
+    gap:26px;
+    align-items:center;
+}
+
+.nav-links a{
+    color:#ddd;
+    font-size:14px;
+    transition:.2s;
+}
+
+.nav-links a:hover{
+    color:var(--yellow);
+}
+
+.menu-btn{
+    display:none;
+    background:none;
+    border:1px solid var(--border);
+    color:#fff;
+    width:42px;
+    height:42px;
+    border-radius:9px;
+    cursor:pointer;
+    font-size:20px;
+}
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero{
+    min-height:100vh;
+    padding-top:150px;
+    display:flex;
+    align-items:center;
+    position:relative;
+    overflow:hidden;
+    background:
+        radial-gradient(circle at 15% 25%,rgba(123,77,255,.12),transparent 25%),
+        radial-gradient(circle at 85% 65%,rgba(245,196,0,.10),transparent 30%),
+        #080808;
+}
+
+.hero-grid{
+    display:grid;
+    grid-template-columns:1.15fr .85fr;
+    gap:70px;
+    align-items:center;
+}
+
+.badge{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:7px 13px;
+    border:1px solid rgba(245,196,0,.25);
+    background:rgba(245,196,0,.06);
+    color:var(--yellow);
+    border-radius:30px;
+    font-size:13px;
+    margin-bottom:22px;
+}
+
+.hero h1{
+    font-size:clamp(38px,6vw,68px);
+    line-height:1.15;
+    margin-bottom:20px;
+}
+
+.hero h1 span{
+    color:var(--yellow);
+}
+
+.hero-text{
+    color:#bdbdbd;
+    font-size:17px;
+    max-width:650px;
+    margin-bottom:30px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+.hero-card{
+    position:relative;
+    min-height:390px;
+    border:1px solid var(--border);
+    background:linear-gradient(145deg,#151515,#0c0c0c);
+    border-radius:28px;
+    padding:35px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+    box-shadow:0 20px 70px rgba(0,0,0,.4);
+}
+
+.hero-card::before{
+    content:"";
+    position:absolute;
+    width:250px;
+    height:250px;
+    background:var(--yellow);
+    filter:blur(100px);
+    opacity:.13;
+    top:-80px;
+    right:-70px;
+}
+
+.school-emblem{
+    position:relative;
+    text-align:center;
+}
+
+.emblem-circle{
+    width:170px;
+    height:170px;
+    border-radius:50%;
+    border:2px solid var(--yellow);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:auto;
+    box-shadow:
+        0 0 0 10px rgba(245,196,0,.05),
+        0 0 50px rgba(245,196,0,.12);
+}
+
+.emblem-circle span{
+    font-size:65px;
+}
+
+.school-emblem h3{
+    margin-top:22px;
+    font-size:21px;
+}
+
+.school-emblem p{
+    color:var(--yellow);
+    font-size:13px;
+    margin-top:5px;
+}
+
+/* =====================================================
+   STATS
+===================================================== */
+
+.stats{
+    margin-top:-55px;
+    position:relative;
+    z-index:5;
+}
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+}
+
+.stat{
+    background:#121212;
+    border:1px solid var(--border);
+    border-radius:17px;
+    padding:22px;
+    text-align:center;
+}
+
+.stat strong{
+    display:block;
+    color:var(--yellow);
+    font-size:27px;
+}
+
+.stat span{
+    color:#aaa;
+    font-size:13px;
+}
+
+/* =====================================================
+   ABOUT
+===================================================== */
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:35px;
+}
+
+.info-card{
+    background:#101010;
+    border:1px solid var(--border);
+    border-radius:20px;
+    padding:30px;
+}
+
+.info-card h3{
+    margin-bottom:16px;
+    color:var(--yellow);
+}
+
+.info-card p{
+    color:#bdbdbd;
+}
+
+.info-list{
+    margin-top:20px;
+    display:grid;
+    gap:12px;
+}
+
+.info-list div{
+    padding:13px 15px;
+    background:#171717;
+    border-radius:10px;
+    border-right:3px solid var(--yellow);
+    color:#ddd;
+}
+
+/* =====================================================
+   SERVICES
+===================================================== */
+
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+}
+
+.service{
+    background:#101010;
+    border:1px solid var(--border);
+    border-radius:18px;
+    padding:27px;
+    transition:.25s;
+}
+
+.service:hover{
+    transform:translateY(-5px);
+    border-color:rgba(245,196,0,.35);
+}
+
+.service-icon{
+    width:50px;
+    height:50px;
+    border-radius:13px;
+    background:rgba(245,196,0,.1);
+    color:var(--yellow);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:23px;
+    margin-bottom:18px;
+}
+
+.service h3{
+    margin-bottom:8px;
+}
+
+.service p{
+    color:#aaa;
+    font-size:14px;
+}
+
+/* =====================================================
+   ANNOUNCEMENTS
+===================================================== */
+
+.announcements-section{
+    background:#0d0d0d;
+    border-top:1px solid var(--border);
+    border-bottom:1px solid var(--border);
+}
+
+.announcement-list{
+    display:grid;
+    gap:15px;
+}
+
+.announcement{
+    background:#141414;
+    border:1px solid var(--border);
+    border-right:4px solid var(--yellow);
+    border-radius:15px;
+    padding:22px;
+}
+
+.announcement-head{
+    display:flex;
+    align-items:flex-start;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.announcement h3{
+    color:#fff;
+    margin-bottom:7px;
+}
+
+.announcement p{
+    color:#bdbdbd;
+    white-space:pre-wrap;
+}
+
+.announcement-date{
+    color:var(--yellow);
+    font-size:12px;
+    white-space:nowrap;
+}
+
+.empty{
+    text-align:center;
+    color:#777;
+    padding:35px;
+    border:1px dashed #292929;
+    border-radius:15px;
+}
+
+.loading{
+    text-align:center;
+    color:var(--yellow);
+    padding:30px;
+}
+
+/* =====================================================
+   ADMIN
+===================================================== */
+
+.admin-box{
+    margin-top:35px;
+    background:#111;
+    border:1px solid rgba(123,77,255,.25);
+    border-radius:20px;
+    padding:25px;
+    display:none;
+}
+
+.admin-box.active{
+    display:block;
+}
+
+.admin-title{
+    color:var(--purple);
+    margin-bottom:20px;
+}
+
+.form-grid{
+    display:grid;
+    gap:14px;
+}
+
+.input,
+textarea,
+select{
+    width:100%;
+    background:#080808;
+    color:#fff;
+    border:1px solid #292929;
+    border-radius:10px;
+    padding:13px;
+    outline:none;
+}
+
+.input:focus,
+textarea:focus,
+select:focus{
+    border-color:var(--yellow);
+}
+
+textarea{
+    min-height:120px;
+    resize:vertical;
+}
+
+.admin-actions{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    margin-top:15px;
+}
+
+.login-row{
+    display:flex;
+    gap:10px;
+    margin-top:20px;
+}
+
+.login-row input{
+    flex:1;
+}
+
+.admin-status{
+    margin-top:10px;
+    color:#aaa;
+    font-size:13px;
+}
+
+.admin-list{
+    margin-top:25px;
+    display:grid;
+    gap:10px;
+}
+
+.admin-item{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:15px;
+    padding:15px;
+    background:#181818;
+    border-radius:10px;
+}
+
+.admin-item span{
+    color:#ddd;
+}
+
+.delete-btn{
+    border:1px solid rgba(255,70,70,.3);
+    background:rgba(255,70,70,.08);
+    color:#ff7777;
+    padding:8px 12px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+/* =====================================================
+   CONTACT
+===================================================== */
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.contact-card{
+    background:#101010;
+    border:1px solid var(--border);
+    border-radius:20px;
+    padding:30px;
+}
+
+.contact-item{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:17px 0;
+    border-bottom:1px solid var(--border);
+}
+
+.contact-item:last-child{
+    border-bottom:0;
+}
+
+.contact-icon{
+    width:45px;
+    height:45px;
+    border-radius:11px;
+    background:rgba(245,196,0,.1);
+    color:var(--yellow);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.contact-item small{
+    display:block;
+    color:#777;
+}
+
+.contact-item strong{
+    display:block;
+    color:#ddd;
+}
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer{
+    background:#050505;
+    border-top:1px solid var(--border);
+    padding:35px 0;
+}
+
+.footer-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+}
+
+.footer-content p{
+    color:#777;
+    font-size:13px;
+}
+
+.footer-brand{
+    color:var(--yellow);
+    font-weight:bold;
+}
+
+/* =====================================================
+   MODAL
+===================================================== */
+
+.modal{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.78);
+    backdrop-filter:blur(7px);
+    display:none;
+    align-items:center;
+    justify-content:center;
+    z-index:2000;
+    padding:20px;
+}
+
+.modal.active{
+    display:flex;
+}
+
+.modal-box{
+    width:min(450px,100%);
+    background:#111;
+    border:1px solid var(--border);
+    border-radius:20px;
+    padding:28px;
+}
+
+.modal-box h3{
+    margin-bottom:18px;
+}
+
+.close-modal{
+    float:left;
+    background:none;
+    border:none;
+    color:#aaa;
+    font-size:22px;
+    cursor:pointer;
+}
+
+/* =====================================================
+   TOAST
+===================================================== */
+
+.toast{
+    position:fixed;
+    bottom:25px;
+    left:25px;
+    background:#151515;
+    color:#fff;
+    border:1px solid rgba(245,196,0,.35);
+    border-right:4px solid var(--yellow);
+    padding:14px 18px;
+    border-radius:10px;
+    transform:translateY(100px);
+    opacity:0;
+    transition:.3s;
+    z-index:3000;
+}
+
+.toast.show{
+    transform:translateY(0);
+    opacity:1;
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:850px){
+
+    .nav-links{
+        position:absolute;
+        top:75px;
+        right:4%;
+        left:4%;
+        background:#111;
+        border:1px solid var(--border);
+        border-radius:14px;
+        padding:15px;
+        display:none;
+        flex-direction:column;
+        align-items:stretch;
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    .nav-links a{
+        padding:10px;
+    }
+
+    .menu-btn{
+        display:block;
+    }
+
+    .hero-grid,
+    .about-grid,
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .hero{
+        padding-top:125px;
+    }
+
+    .hero-card{
+        min-height:310px;
+    }
+
+    .services-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+}
+
+@media(max-width:560px){
+
+    section{
+        padding:70px 0;
+    }
+
+    .hero h1{
+        font-size:39px;
+    }
+
+    .hero-text{
+        font-size:15px;
+    }
+
+    .stats-grid{
+        grid-template-columns:1fr;
+    }
+
+    .services-grid{
+        grid-template-columns:1fr;
+    }
+
+    .section-title h2{
+        font-size:29px;
+    }
+
+    .announcement-head{
+        flex-direction:column;
+        gap:8px;
+    }
+
+    .login-row{
+        flex-direction:column;
+    }
+
+    .footer-content{
+        flex-direction:column;
+        text-align:center;
+    }
+
+}
+
+/* =====================================================
+   SCROLLBAR
+===================================================== */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-track{
+    background:#080808;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#333;
+    border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:var(--yellow);
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header>
+
+<div class="container navbar">
+
+<a href="#home" class="logo">
+
+<div class="logo-icon">ف</div>
+
+<div class="logo-text">
+<strong>فتح الله كيرة</strong>
+<span>مدرسة تجارية</span>
+</div>
+
+</a>
+
+<button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+<nav class="nav-links" id="navLinks">
+
+<a href="#home">الرئيسية</a>
+<a href="#about">عن المدرسة</a>
+<a href="#services">الخدمات</a>
+<a href="#announcements">الإعلانات</a>
+<a href="#contact">تواصل معنا</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="hero" id="home">
+
+<div class="container hero-grid">
+
+<div>
+
+<div class="badge">
+● الموقع الرسمي للمدرسة
+</div>
+
+<h1>
+مدرسة
+<span>فتح الله كيرة</span>
+التجارية
+</h1>
+
+<p class="hero-text">
+نحو تعليم تجاري أفضل، وبيئة مدرسية تساعد الطلاب على بناء المعرفة والمهارات والاستعداد للمستقبل.
+</p>
+
+<div class="hero-buttons">
+
+<a href="#announcements" class="btn btn-yellow">
+📢 آخر الإعلانات
+</a>
+
+<a href="#about" class="btn btn-outline">
+تعرف على المدرسة
+</a>
+
+</div>
+
+</div>
+
+
+<div class="hero-card">
+
+<div class="school-emblem">
+
+<div class="emblem-circle">
+<span>🏫</span>
+</div>
+
+<h3>مدرسة فتح الله كيرة التجارية</h3>
+
+<p>تعليم • مهارة • مستقبل</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     STATS
+===================================================== -->
+
+<div class="stats">
+
+<div class="container stats-grid">
+
+<div class="stat">
+<strong>🏫</strong>
+<span>مدرسة للتعليم التجاري</span>
+</div>
+
+<div class="stat">
+<strong>📚</strong>
+<span>تعليم ومهارات عملية</span>
+</div>
+
+<div class="stat">
+<strong>🚀</strong>
+<span>استعداد للمستقبل</span>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- =====================================================
+     ABOUT
+===================================================== -->
+
+<section id="about">
+
+<div class="container">
+
+<div class="section-title">
+
+<div class="small">ABOUT SCHOOL</div>
+
+<h2>عن المدرسة</h2>
+
+<p>
+معلومات أساسية عن مدرسة فتح الله كيرة التجارية ورسالتها التعليمية.
+</p>
+
+</div>
+
+
+<div class="about-grid">
+
+<div class="info-card">
+
+<h3>مدرسة فتح الله كيرة التجارية</h3>
+
+<p>
+مدرسة تهدف إلى تقديم تعليم تجاري يساعد الطلاب على اكتساب المعرفة
+والمهارات اللازمة للدراسة والحياة العملية، مع الاهتمام بالانضباط
+والتطوير المستمر.
+</p>
+
+<div class="info-list">
+
+<div>🎓 التعليم: تجاري</div>
+
+<div>👨‍🏫 مدير المدرسة: أ. أمير محيي الدين</div>
+
+<div>📍 الإسكندرية</div>
+
+<div>🏫 التعليم الثانوي التجاري</div>
+
+</div>
+
+</div>
+
+
+<div class="info-card">
+
+<h3>رسالتنا</h3>
+
+<p>
+بناء طالب يمتلك أساسًا علميًا ومهارات عملية تساعده على مواصلة
+تعليمه أو الدخول إلى سوق العمل بثقة ومسؤولية.
+</p>
+
+<div class="info-list">
+
+<div>📖 المعرفة أولًا</div>
+
+<div>💼 مهارات لسوق العمل</div>
+
+<div>🤝 الانضباط والمسؤولية</div>
+
+<div>🚀 التطوير المستمر</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     SERVICES
+===================================================== -->
+
+<section id="services">
+
+<div class="container">
+
+<div class="section-title">
+
+<div class="small">SCHOOL SERVICES</div>
+
+<h2>خدمات المدرسة</h2>
+
+<p>
+الوصول السريع إلى أهم المعلومات والخدمات الإلكترونية.
+</p>
+
+</div>
+
+
+<div class="services-grid">
+
+<div class="service">
+
+<div class="service-icon">📢</div>
+
+<h3>الإعلانات</h3>
+
+<p>
+متابعة أحدث إعلانات المدرسة والمواعيد والتعليمات المهمة للطلاب.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">📚</div>
+
+<h3>المعلومات الدراسية</h3>
+
+<p>
+عرض المعلومات والبيانات الدراسية التي يتم اعتمادها ونشرها من المدرسة.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">📝</div>
+
+<h3>التنسيق والدرجات</h3>
+
+<p>
+قسم مخصص لإضافة بيانات التنسيق والدرجات عند اعتمادها.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">📞</div>
+
+<h3>التواصل</h3>
+
+<p>
+الوصول إلى بيانات التواصل والعنوان والمعلومات الأساسية للمدرسة.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">💼</div>
+
+<h3>التعليم التجاري</h3>
+
+<p>
+معلومات تساعد الطلاب على فهم طبيعة التعليم التجاري ومجالاته.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">🔔</div>
+
+<h3>التحديثات</h3>
+
+<p>
+الحصول على آخر المستجدات المنشورة من إدارة المدرسة.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     ANNOUNCEMENTS
+===================================================== -->
+
+<section class="announcements-section" id="announcements">
+
+<div class="container">
+
+<div class="section-title">
+
+<div class="small">LATEST NEWS</div>
+
+<h2>إعلانات المدرسة</h2>
+
+<p>
+هنا تظهر الإعلانات التي يتم نشرها من لوحة الإدارة.
+</p>
+
+</div>
+
+
+<div id="announcementList" class="announcement-list">
+
+<div class="loading">
+جاري تحميل الإعلانات...
+</div>
+
+</div>
+
+
+<!-- ADMIN -->
+
+<div class="admin-box" id="adminBox">
+
+<h3 class="admin-title">⚙️ لوحة إدارة الإعلانات</h3>
+
+<div class="form-grid">
+
+<input
+id="announcementTitle"
+class="input"
+type="text"
+placeholder="عنوان الإعلان">
+
+<textarea
+id="announcementContent"
+placeholder="اكتب محتوى الإعلان"></textarea>
+
+<select id="announcementDuration">
+
+<option value="0">بدون انتهاء</option>
+<option value="1">ينتهي بعد يوم</option>
+<option value="3">ينتهي بعد 3 أيام</option>
+<option value="7">ينتهي بعد أسبوع</option>
+<option value="30">ينتهي بعد 30 يوم</option>
+
+</select>
+
+</div>
+
+
+<div class="admin-actions">
+
+<button class="btn btn-yellow" onclick="publishAnnouncement()">
+نشر الإعلان
+</button>
+
+<button class="btn btn-outline" onclick="logoutAdmin()">
+تسجيل الخروج
+</button>
+
+</div>
+
+
+<div class="admin-list" id="adminList"></div>
+
+</div>
+
+
+<div class="login-row">
+
+<input
+id="adminPassword"
+class="input"
+type="password"
+placeholder="كلمة مرور الإدارة">
+
+<button class="btn btn-outline" onclick="loginAdmin()">
+دخول الإدارة
+</button>
+
+</div>
+
+<div class="admin-status" id="adminStatus"></div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+
+<section id="contact">
+
+<div class="container">
+
+<div class="section-title">
+
+<div class="small">CONTACT</div>
+
+<h2>تواصل معنا</h2>
+
+<p>
+للاستفسارات والمعلومات الخاصة بالمدرسة.
+</p>
+
+</div>
+
+
+<div class="contact-grid">
+
+<div class="contact-card">
+
+<div class="contact-item">
+
+<div class="contact-icon">🏫</div>
+
+<div>
+
+<small>المدرسة</small>
+
+<strong>مدرسة فتح الله كيرة التجارية</strong>
+
+</div>
+
+</div>
+
+
+<div class="contact-item">
+
+<div class="contact-icon">👨‍🏫</div>
+
+<div>
+
+<small>مدير المدرسة</small>
+
+<strong>أ. أمير محيي الدين</strong>
+
+</div>
+
+</div>
+
+
+<div class="contact-item">
+
+<div class="contact-icon">📍</div>
+
+<div>
+
+<small>الموقع</small>
+
+<strong>الإسكندرية</strong>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="contact-card">
+
+<h3 style="color:#f5c400;margin-bottom:15px;">
+معلومة مهمة
+</h3>
+
+<p style="color:#aaa;">
+سيتم إضافة بيانات التواصل الرسمية، أرقام الهاتف،
+العنوان التفصيلي وأي روابط رسمية أخرى عند اعتمادها.
+</p>
+
+<br>
+
+<a href="#announcements" class="btn btn-yellow">
+📢 متابعة الإعلانات
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+<div class="container footer-content">
+
+<div>
+
+<div class="footer-brand">
+مدرسة فتح الله كيرة التجارية
+</div>
+
+<p>
+الموقع الإلكتروني للمدرسة
+</p>
+
+</div>
+
+<p>
+© 2026 جميع الحقوق محفوظة
+</p>
+
+</div>
+
+</footer>
+
+
+<!-- =====================================================
+     TOAST
+===================================================== -->
+
+<div class="toast" id="toast"></div>
+
+
+<!-- =====================================================
+     SUPABASE
+===================================================== -->
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script>
+
+/* =====================================================
+   SUPABASE CONFIG
+===================================================== */
+
+const SUPABASE_URL =
+"https://rjhnthrmtnojidhxhkbm.supabase.co";
+
+const SUPABASE_KEY =
+"sb_publishable_EkeVxtgfm4JhWHUvq0KI4A_eHxedNpA";
+
+const supabaseClient =
+window.supabase.createClient(
+    SUPABASE_URL,
+    SUPABASE_KEY
+);
+
+
+/* =====================================================
+   ADMIN
+===================================================== */
+
+const ADMIN_PASS = "04035500";
+
+let isAdmin = false;
+
+
+/* =====================================================
+   MENU
+===================================================== */
+
+function toggleMenu(){
+
+    const menu =
+        document.getElementById("navLinks");
+
+    menu.classList.toggle("active");
+
+}
+
+
+/* =====================================================
+   TOAST
+===================================================== */
+
+function showToast(message){
+
+    const toast =
+        document.getElementById("toast");
+
+    toast.textContent = message;
+
+    toast.classList.add("show");
+
+    setTimeout(()=>{
+        toast.classList.remove("show");
+    },3000);
+
+}
+
+
+/* =====================================================
+   LOAD ANNOUNCEMENTS
+===================================================== */
+
+async function loadAnnouncements(){
+
+    const list =
+        document.getElementById("announcementList");
+
+    list.innerHTML =
+        '<div class="loading">جاري تحميل الإعلانات...</div>';
+
+    try{
+
+        const { data, error } =
+            await supabaseClient
+            .from("announcements")
+            .select("*")
+            .order("created_at",{ascending:false});
+
+        if(error){
+            throw error;
+        }
+
+
+        const now = new Date();
+
+        const active =
+            (data || []).filter(item => {
+
+                if(!item.expires_at){
+                    return true;
+                }
+
+                return new Date(item.expires_at) > now;
+
+            });
+
+
+        if(active.length === 0){
+
+            list.innerHTML =
+                '<div class="empty">لا توجد إعلانات منشورة حاليًا.</div>';
+
+            return;
+
+        }
+
+
+        list.innerHTML = "";
+
+        active.forEach(item => {
+
+            const article =
+                document.createElement("article");
+
+            article.className =
+                "announcement";
+
+            const date =
+                item.created_at
+                ? new Date(item.created_at)
+                    .toLocaleDateString("ar-EG")
+                : "";
+
+            article.innerHTML = `
+
+                <div class="announcement-head">
+
+                    <div>
+
+                        <h3>
+                            ${escapeHTML(item.title || "إعلان")}
+                        </h3>
+
+                        <p>
+                            ${escapeHTML(item.content || "")}
+                        </p>
+
+                    </div>
+
+                    <div class="announcement-date">
+                        ${date}
+                    </div>
+
+                </div>
+
+            `;
+
+            list.appendChild(article);
+
+        });
+
+
+    }catch(error){
+
+        console.error(error);
+
+        list.innerHTML = `
+            <div class="empty">
+                تعذر تحميل الإعلانات حاليًا.
+                <br>
+                تأكد من اتصال الموقع بقاعدة البيانات.
+            </div>
+        `;
+
+    }
+
+}
+
+
+/* =====================================================
+   ESCAPE HTML
+===================================================== */
+
+function escapeHTML(value){
+
+    return String(value)
+        .replaceAll("&","&amp;")
+        .replaceAll("<","&lt;")
+        .replaceAll(">","&gt;")
+        .replaceAll('"',"&quot;")
+        .replaceAll("'","&#039;");
+
+}
+
+
+/* =====================================================
+   LOGIN
+===================================================== */
+
+function loginAdmin(){
+
+    const password =
+        document.getElementById("adminPassword").value;
+
+    if(password === ADMIN_PASS){
+
+        isAdmin = true;
+
+        document
+            .getElementById("adminBox")
+            .classList.add("active");
+
+        document
+            .getElementById("adminStatus")
+            .textContent =
+            "تم تسجيل الدخول كمسؤول.";
+
+        document
+            .getElementById("adminPassword")
+            .value = "";
+
+        loadAdminAnnouncements();
+
+        showToast("تم تسجيل الدخول بنجاح");
+
+    }else{
+
+        document
+            .getElementById("adminStatus")
+            .textContent =
+            "كلمة المرور غير صحيحة.";
+
+        showToast("كلمة المرور غير صحيحة");
+
+    }
+
+}
+
+
+/* =====================================================
+   LOGOUT
+===================================================== */
+
+function logoutAdmin(){
+
+    isAdmin = false;
+
+    document
+        .getElementById("adminBox")
+        .classList.remove("active");
+
+    document
+        .getElementById("adminStatus")
+        .textContent = "";
+
+}
+
+
+/* =====================================================
+   PUBLISH
+===================================================== */
+
+async function publishAnnouncement(){
+
+    if(!isAdmin){
+
+        showToast("يجب تسجيل الدخول أولًا");
+
+        return;
+
+    }
+
+
+    const title =
+        document
+        .getElementById("announcementTitle")
+        .value.trim();
+
+    const content =
+        document
+        .getElementById("announcementContent")
+        .value.trim();
+
+    const duration =
+        Number(
+            document
+            .getElementById("announcementDuration")
+            .value
+        );
+
+
+    if(!title || !content){
+
+        showToast("اكتب عنوان ومحتوى الإعلان");
+
+        return;
+
+    }
+
+
+    let expires_at = null;
+
+    if(duration > 0){
+
+        const date = new Date();
+
+        date.setDate(
+            date.getDate() + duration
+        );
+
+        expires_at =
+            date.toISOString();
+
+    }
+
+
+    try{
+
+        const { error } =
+            await supabaseClient
+            .from("announcements")
+            .insert([{
+
+                title:title,
+                content:content,
+                expires_at:expires_at
+
+            }]);
+
+
+        if(error){
+            throw error;
+        }
+
+
+        document
+            .getElementById("announcementTitle")
+            .value = "";
+
+        document
+            .getElementById("announcementContent")
+            .value = "";
+
+        document
+            .getElementById("announcementDuration")
+            .value = "0";
+
+
+        showToast("تم نشر الإعلان بنجاح ✅");
+
+        await loadAnnouncements();
+
+        await loadAdminAnnouncements();
+
+
+    }catch(error){
+
+        console.error(error);
+
+        showToast(
+            "حدث خطأ أثناء نشر الإعلان"
+        );
+
+    }
+
+}
+
+
+/* =====================================================
+   ADMIN ANNOUNCEMENTS
+===================================================== */
+
+async function loadAdminAnnouncements(){
+
+    const list =
+        document.getElementById("adminList");
+
+    if(!isAdmin){
+        return;
+    }
+
+    list.innerHTML =
+        "<div style='color:#777'>جاري التحميل...</div>";
+
+
+    try{
+
+        const { data,error } =
+            await supabaseClient
+            .from("announcements")
+            .select("*")
+            .order("created_at",{ascending:false});
+
+
+        if(error){
+            throw error;
+        }
+
+
+        if(!data || data.length === 0){
+
+            list.innerHTML =
+                "<div style='color:#777'>لا توجد إعلانات.</div>";
+
+            return;
+
+        }
+
+
+        list.innerHTML = "";
+
+
+        data.forEach(item => {
+
+            const row =
+                document.createElement("div");
+
+            row.className =
+                "admin-item";
+
+
+            const title =
+                document.createElement("span");
+
+            title.textContent =
+                item.title || "إعلان";
+
+
+            const button =
+                document.createElement("button");
+
+            button.className =
+                "delete-btn";
+
+            button.textContent =
+                "حذف";
+
+
+            button.onclick =
+                () => deleteAnnouncement(item.id);
+
+
+            row.appendChild(title);
+
+            row.appendChild(button);
+
+            list.appendChild(row);
+
+        });
+
+
+    }catch(error){
+
+        console.error(error);
+
+        list.innerHTML =
+            "<div style='color:#ff7777'>تعذر تحميل الإعلانات.</div>";
+
+    }
+
+}
+
+
+/* =====================================================
+   DELETE
+===================================================== */
+
+async function deleteAnnouncement(id){
+
+    if(!isAdmin){
+
+        showToast("غير مسموح");
+
+        return;
+
+    }
+
+
+    const confirmed =
+        confirm("هل تريد حذف هذا الإعلان؟");
+
+
+    if(!confirmed){
+        return;
+    }
+
+
+    try{
+
+        const { error } =
+            await supabaseClient
+            .from("announcements")
+            .delete()
+            .eq("id",id);
+
+
+        if(error){
+            throw error;
+        }
+
+
+        showToast("تم حذف الإعلان");
+
+        await loadAnnouncements();
+
+        await loadAdminAnnouncements();
+
+
+    }catch(error){
+
+        console.error(error);
+
+        showToast(
+            "تعذر حذف الإعلان"
+        );
+
+    }
+
+}
+
+
+/* =====================================================
+   START
+===================================================== */
+
+document.addEventListener(
+    "DOMContentLoaded",
+    loadAnnouncements
+);
+
+</script>
+
+</body>
+  </html>
